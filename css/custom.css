@@ -30,6 +30,7 @@
         .container {
             position: relative;
             justify-content: center;
+            background-color: darkgrey;
         }
         
         #carouselQuiz {
@@ -59,6 +60,8 @@
         
         #imgModalidades {
             width: 15%;
+            margin-top: 2%;
+            margin-left: 1%;
         }
         
         #cardTitle {
@@ -71,12 +74,13 @@
         
         .card {
             margin-top: 5%;
+            border-radius: 3%;
         }
         
         #bancoDeQuestoes {
-            margin-top: 8%
+            margin-top: 3%
         }
         
         #rankinQuiz {
-            margin-top: 8%;
+            margin-top: 3%;
         }
