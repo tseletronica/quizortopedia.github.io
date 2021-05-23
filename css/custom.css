@@ -59,3 +59,15 @@
         #box {
             background-color: blue;
         }
+        
+        #cardTitle {
+            text-align: left;
+        }
+        
+        #cardModalidade {
+            margin-top: 5%;
+            margin-left: 0%;
+            margin-right: 0%;
+            width: 99%;
+            height: 90%
+        }
