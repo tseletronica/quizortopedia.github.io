@@ -33,7 +33,7 @@
             background-color: darkgrey;
         }
         
-        #carouselQuiz {
+        #carou #carouselQuiz {
             margin-right: 10%;
             margin-left: 10%;
             border-radius: 5%;
@@ -82,5 +82,13 @@
         }
         
         #rankinQuiz {
+            margin-top: 3%;
+        }
+        
+        #carouselMedalhas {
+            margin-top: 3%;
+        }
+        
+        #carousel01 {
             margin-top: 3%;
         }
