@@ -30,7 +30,6 @@
         .container {
             position: relative;
             justify-content: center;
-            background-color: cornflowerblue;
         }
         
         #carouselQuiz {
@@ -72,4 +71,12 @@
         
         .card {
             margin-top: 5%;
+        }
+        
+        #bancoDeQuestoes {
+            margin-top: 8%
+        }
+        
+        #rankinQuiz {
+            margin-top: 8%;
         }
