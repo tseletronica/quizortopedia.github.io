@@ -1,0 +1,61 @@
+        body {
+            background-color: hsl(0, 11%, 96%);
+        }
+        
+        #header {
+            width: 100%;
+            background-color: transparent;
+            transition: background ease-out 0.2s;
+        }
+        
+        #banner-principal {
+            padding-top: 2%;
+        }
+        
+        #slider {
+            margin-top: 8%;
+        }
+        
+        #navbarNav {
+            width: auto;
+        }
+        
+        #carousel-test {
+            height: 32rem;
+            background: #777;
+            color: white;
+            position: relative
+        }
+        
+        .container {
+            position: relative;
+            justify-content: center;
+        }
+        
+        #carouselQuiz {
+            margin-right: 10%;
+            margin-left: 10%;
+            border-radius: 5%;
+            width: 80%;
+        }
+        
+        .carousel-caption {
+            width: 30%;
+            height: 70%;
+            margin-left: 35%;
+            padding: auto;
+            text-align: left;
+        }
+        
+        #modalidades {
+            text-align: center;
+            margin-top: 5%;
+        }
+        
+        #imgModalidades {
+            width: 20%;
+        }
+        
+        #box {
+            background-color: blue;
+        }
