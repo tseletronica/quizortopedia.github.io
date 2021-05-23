@@ -30,6 +30,7 @@
         .container {
             position: relative;
             justify-content: center;
+            background-color: cornflowerblue;
         }
         
         #carouselQuiz {
@@ -47,27 +48,28 @@
             text-align: left;
         }
         
-        #modalidades {
+        #tituloModalidades {
             text-align: center;
             margin-top: 5%;
         }
         
-        #imgModalidades {
-            width: 20%;
+        #textoModalidades {
+            text-align: center;
+            margin-top: 2%;
         }
         
-        #box {
-            background-color: blue;
+        #imgModalidades {
+            width: 15%;
         }
         
         #cardTitle {
             text-align: left;
         }
         
-        #cardModalidade {
+        #cardText {
+            text-align: justify;
+        }
+        
+        .card {
             margin-top: 5%;
-            margin-left: 0%;
-            margin-right: 0%;
-            width: 99%;
-            height: 90%
         }
