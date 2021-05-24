@@ -2,14 +2,14 @@
     
     @media only screen and (max-width: 959px) {
         p {
-            font-size: 10px;
+            font-size: 14px;
         }
     }
     /* Tablet Portrait size to standard 960 (devices and browsers) */
     
     @media only screen and (min-width: 768px) and (max-width: 959px) {
         p {
-            font-size: 12px;
+            font-size: 14px;
         }
     }
     /* All Mobile Sizes (devices and browser) */
@@ -23,13 +23,13 @@
     
     @media only screen and (min-width: 480px) and (max-width: 767px) {
         p {
-            font-size: 12px;
+            font-size: 14px;
         }
     }
     /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
     
     @media only screen and (max-width: 479px) {
         p {
-            font-size: 12px;
+            font-size: 14px;
         }
     }
