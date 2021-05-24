@@ -23,7 +23,6 @@
         .container {
             position: relative;
             justify-content: center;
-            background-color: darkgrey;
         }
         
         #carouselQuiz {
@@ -47,7 +46,7 @@
         }
         
         #cardTitle {
-            text-align: left;
+            text-align: center;
         }
         
         #cardText {
