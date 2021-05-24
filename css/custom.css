@@ -1,7 +1,3 @@
-        body {
-            background-color: hsl(0, 11%, 96%);
-        }
-        
         #header {
             width: 100%;
             background-color: transparent;
@@ -45,7 +41,7 @@
             margin-left: 1%;
         }
         
-        #cardTitle {
+        #cardslider01Title {
             text-align: center;
         }
         
