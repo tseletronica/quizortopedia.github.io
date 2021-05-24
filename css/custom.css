@@ -20,32 +20,14 @@
             width: auto;
         }
         
-        #carousel-test {
-            height: 32rem;
-            background: #777;
-            color: white;
-            position: relative
-        }
-        
         .container {
             position: relative;
             justify-content: center;
             background-color: darkgrey;
         }
         
-        #carou #carouselQuiz {
-            margin-right: 10%;
-            margin-left: 10%;
+        #carouselQuiz {
             border-radius: 5%;
-            width: 80%;
-        }
-        
-        .carousel-caption {
-            width: 30%;
-            height: 70%;
-            margin-left: 35%;
-            padding: auto;
-            text-align: left;
         }
         
         #tituloModalidades {
