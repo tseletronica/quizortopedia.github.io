@@ -3,9 +3,9 @@
                     top: -2%;
                     left: 0;
                     right: 0;
-                    background: white;
                     z-index: 1000;
                     transition: background ease-out 0.2s;
+                    background-color: white
                 }
                 
                 #navbarNav {
@@ -53,6 +53,9 @@
                 #depoimentos {
                     margin-left: 10%;
                     margin-right: 10%;
+                    padding-top: 5%;
+                    padding-right: 5%;
+                    padding-left: 5%;
                     background-color: #24B3AF;
                     border-radius: 3%;
                     color: white;
@@ -62,10 +65,9 @@
                 #fotoDepoimento {
                     border-radius: 50%;
                     margin-bottom: 20%;
-                    margin-left: 14%;
                     margin-right: 20%
                 }
                 
                 #banner-principal {
-                    margin-top: 15%;
+                    margin-top: 14%;
                 }
