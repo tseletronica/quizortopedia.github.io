@@ -46,10 +46,6 @@
                     margin-left: 1%;
                 }
                 
-                #tituloSecoes {
-                    text-align: center;
-                }
-                
                 #depoimentos {
                     margin-left: 10%;
                     margin-right: 10%;
@@ -83,4 +79,9 @@
                 #floatLeft {
                     float: left;
                     margin-left: 1%;
+                }
+                
+                #tituloSecoes {
+                    text-align: center;
+                    margin-top: 10%
                 }
