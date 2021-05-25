@@ -5,7 +5,8 @@
                     right: 0;
                     z-index: 1000;
                     transition: background ease-out 0.2s;
-                    background-color: white
+                    background-color: white;
+                    opacity: 0.92
                 }
                 
                 #navbarNav {
