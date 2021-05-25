@@ -4,14 +4,6 @@
     transition: background ease-out 0.2s;
 }
 
-#banner-principal {
-    padding-top: 2%;
-}
-
-#slider {
-    margin-top: 8%;
-}
-
 #navbarNav {
     width: auto;
 }
@@ -19,15 +11,12 @@
 .container {
     position: relative;
     justify-content: center;
+    background-color: aqua;
+    margin-top: 3%;
 }
 
 #carouselQuiz {
     border-radius: 5%;
-}
-
-#tituloModalidades {
-    text-align: center;
-    margin-top: 5%;
 }
 
 #textoModalidades {
@@ -41,11 +30,6 @@
     margin-left: 1%;
 }
 
-#cardslider01Title {
-    text-align: center;
-    margin-top: 10%;
-}
-
 #cardText {
     text-align: justify;
 }
@@ -53,22 +37,6 @@
 .card {
     margin-top: 5%;
     border-radius: 3%;
-}
-
-#bancoDeQuestoes {
-    margin-top: 3%
-}
-
-#rankinQuiz {
-    margin-top: 3%;
-}
-
-#carouselMedalhas {
-    margin-top: 3%;
-}
-
-#carousel01 {
-    margin-top: 3%;
 }
 
 #imgCardsSlider01 {
@@ -79,6 +47,10 @@
 .floatLeft {
     float: left;
     margin-left: 1%;
+}
+
+#tituloSecoes {
+    text-align: center;
 }
 
 ;

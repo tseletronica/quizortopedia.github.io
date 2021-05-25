@@ -52,6 +52,12 @@
                     item: 2,
                     slideMove: 1
                 }
+            }, {
+                breakpoint: 321,
+                settings: {
+                    item: 1,
+                    slideMove: 1
+                }
             }
 
 
