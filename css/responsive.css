@@ -18,6 +18,12 @@
         p {
             font-size: 14px;
         }
+        h5{ 
+            font-size:medium;
+        }
+        h1{
+            font-size: medium;
+        }
     }
     /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
     
@@ -25,11 +31,23 @@
         p {
             font-size: 14px;
         }
+        h5{ 
+            font-size:medium;
+        }
+        h1{
+            font-size: medium;
+        }
     }
     /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
     
     @media only screen and (max-width: 479px) {
         p {
             font-size: 14px;
+        }
+        h5{ 
+            font-size:small;
+        }
+        h1{
+            font-size: medium;
         }
     }
