@@ -17,7 +17,7 @@ $hora_envio = date('H:i:s');
 $mail = new PHPMailer(true);
 
 try {
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER; //Habilita o modo debug
+    //$mail->SMTPDebug = SMTP::DEBUG_SERVER; //Habilita o modo debug
     $mail->isSMTP(); //Habilita para SMTP
     $mail->Host = 'smtp.gmail.com'; //Host do servidor de email
     $mail->SMTPAuth = true; //Habilita autenticação via SMTP
@@ -39,7 +39,7 @@ try {
     $mail->AltBody = 'Caso receba essa menssagem procurar o suporte ';
 
     if ($mail->send()) {
-        echo 'Email enviado com sucesso por  ';
+        echo 'Email enviado com sucesso por  '.$mensagem;
     } else {
         echo 'Email não enviado';
     }
