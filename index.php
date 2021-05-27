@@ -30,15 +30,11 @@ try {
 
     $mail->isHTML(true); //Habilita o modo HTML
     $mail->Subject = 'Assunto do Email';
-    $mail->Body = '
-            "Nome:".$nome "\r\n"
-            "Email:".$email "\r\n"
-            "Mensagem:".$mensagem "\r\n"
-            ';
+    $mail->Body = ' "<strong>".$nome "</strong>"' ;
     $mail->AltBody = 'chegou a menssagem de Teste ';
 
     if ($mail->send()) {
-        echo 'Email enviado com sucesso por' . $nome;
+        echo 'Email enviado com sucesso por  ' . $nome;
     } else {
         echo 'Email não enviado';
     }
