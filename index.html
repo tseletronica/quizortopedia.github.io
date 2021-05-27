@@ -780,11 +780,11 @@
     <!-- // Modal Duvidas Frequentes-->
     <!--  Modal Contato-->
     <!-- Modal -->
-    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="leModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Formulário de Contato</h5>
+                <div class="modal-header bg-success" style="color: white;">
+                    <h5 class="modal-title" id="ModalLabel">Formulário de Contato</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body"
@@ -792,18 +792,19 @@
                     <form class="form" method="POST" action="./index.php"style="width: 80%;margin-left: 10%;">
                         <div class="mb-3">
                             <input class="form-control" name="nome" placeholder="Nome" type="name"
-                                id="exampleInputEmail1" placeholder="Nome" aria-describedby="emailHelp">
+                                id="exampleInputEmail1" placeholder="Nome" aria-describedby="nomeHelp">
                         </div>
                         <div class="mb-3">
                             <input class="form-control" name="email" placeholder="Email" type="email"
                                 id="exampleInputEmail1" aria-describedby="emailHelp">
+                                
                         </div>
                         <div class="mb-3">
-                            <input class="form-control" name="mensagem" type="text" id="" size="30"
-                                placeholder="Conte-nos sua duvida.">
-
-                            </textarea>
+                            <!--input class="form-control" name="mensagem" type="text" id="" cols="30" rows="10"
+                                placeholder="Conte-nos sua duvida."-->    
+                        <textarea class="form-control" name="mensagem" id="" cols="30" rows="5" placeholder="Conte-nos sua duvida."></textarea>                        
                         </div>
+                       
                         <div class="d-grid gap-2 d-md-flex justify-content-center">
                             <button type="submit" class="btn btn-orange "> Enviar </button>
                         </div>

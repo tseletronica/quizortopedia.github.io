@@ -41,7 +41,7 @@ try {
     $mail->AltBody = 'Caso receba essa menssagem procurar o suporte ';
 
     if ($mail->send()) {
-        echo 'Email enviado com sucesso por';
+        echo "<script> window.location='index.html';alert('$nome, sua mensagem foi enviada com sucesso! Estaremos retornando em breve');</script>";
     } else {
         echo 'Email não enviado';
     }
