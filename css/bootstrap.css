@@ -2886,7 +2886,7 @@ textarea.form-control.is-invalid {
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     vertical-align: middle;
     cursor: pointer;
@@ -2899,6 +2899,7 @@ textarea.form-control.is-invalid {
     font-size: 1rem;
     border-radius: 0.25rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin-top: 1%;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -4620,6 +4621,7 @@ fieldset:disabled .btn {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
+    
 }
 
 .card>hr {
@@ -7990,6 +7992,9 @@ fieldset:disabled .btn {
 
 .bg-success {
     background-color: #24B3AF !important; 
+}
+.bg-orange {
+    background-color: #FFA140 !important; 
 }
 
 .bg-info {
