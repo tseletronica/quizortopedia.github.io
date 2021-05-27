@@ -30,10 +30,12 @@ try {
 
     $mail->isHTML(true); //Habilita o modo HTML
     $mail->Subject = 'Assunto do Email';
-    $mail->Body =   "<p><strong>Nome:'$nome'</p></strong>";
-                    "<p><strong>Email'$email.'</p></strong>";
-                    "<p><strong>Mensagem'$mensagem'</p></strong>";                    
-
+    $mail->Body ="<html>
+                        <p><b>Nome: </b>$nome</p>
+                        <p><b>E-mail: </b>$email</p>
+                        <p><b>Mensagem: </b>$mensagem</p>
+                        <p>Este e-mail foi enviado em <b>$data_envio</b> às <b>$hora_envio</b></p>
+                </html>";
     $mail->AltBody = 'Caso receba essa menssagem procurar o suporte ';
 
     if ($mail->send()) {
