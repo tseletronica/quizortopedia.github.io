@@ -10,7 +10,7 @@ use PHPMailer\PHPMailer\Exception;
  //Variáveis
  $nome = $_POST['nome'];
  $email = $_POST['email'];
- $mensagem = $_POST['menssagem'];
+ $mensagem = $_POST['mensagem'];
  $data_envio = date('d/m/Y');
  $hora_envio = date('H:i:s');
 
@@ -32,12 +32,12 @@ $mail->isHTML(true);//Habilita o modo HTML
 $mail->Subject = 'Assunto do Email';
 $mail->Body = ' <p><b> Nome: </b> $nome</p>
                 <p><b> E-mail: </b> $email </p>
-                <p><b> Mensagem: </b> $mensagem </p>
+                <p><b> Mensagem: </b> $menssagem </p>
                 <p> Este e-mail foi enviado em <b> $data_envio </b> às <b> $hora_envio </b> </p>';
 $mail->AltBody = 'chegou a menssagem de Teste '; 
 
 if($mail->send()){
-    echo 'Email enviado com sucesso';
+    echo 'Email enviado com sucesso por'.$nome;
 }else {
     echo 'Email não enviado';
 }
