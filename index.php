@@ -14,6 +14,7 @@ $mensagem = $_POST['mensagem'];
 $data_envio = date('d/m/Y');
 $hora_envio = date('H:i:s');
 
+$mail->CharSet = 'UTF-8';
 $mail = new PHPMailer(true);
 
 try {
@@ -31,6 +32,7 @@ try {
     $mail->isHTML(true); //Habilita o modo HTML
     $mail->Subject = 'Assunto do Email';
     $mail->Body ="<html>
+    <head> <head>
                         <p><b>Nome: </b>$nome</p>
                         <p><b>E-mail: </b>$email</p>
                         <p><b>Mensagem: </b>$mensagem</p>
@@ -39,7 +41,7 @@ try {
     $mail->AltBody = 'Caso receba essa menssagem procurar o suporte ';
 
     if ($mail->send()) {
-        echo 'Email enviado com sucesso por  '.$mensagem;
+        echo 'Email enviado com sucesso por';
     } else {
         echo 'Email não enviado';
     }
