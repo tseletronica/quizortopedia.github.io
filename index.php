@@ -39,7 +39,7 @@ try {
     $mail->AltBody = 'Caso receba essa menssagem procurar o suporte ';
 
     if ($mail->send()) {
-        echo 'Email enviado com sucesso por  ' . $email;
+        echo 'Email enviado com sucesso por  ';
     } else {
         echo 'Email não enviado';
     }
