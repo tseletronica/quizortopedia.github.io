@@ -10,7 +10,7 @@ use PHPMailer\PHPMailer\Exception;
  //Variáveis
  $nome = $_POST['nome'];
  $email = $_POST['email'];
- $mensagem = $_POST['mensagem'];
+ $mensagem = $_POST['menssagem'];
  $data_envio = date('d/m/Y');
  $hora_envio = date('H:i:s');
 
