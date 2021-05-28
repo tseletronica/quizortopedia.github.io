@@ -1,5 +1,8 @@
 #cardFaleConosco{
     margin-top: 8%;
+    background-image: url(/img/Vectordiretito.svg);
+    background-repeat: no-repeat;
+    background-position: 100%;
 }
 #headerfaleconosco {
     position: fixed;
@@ -23,4 +26,10 @@
 }
 #listadeduvidas{
 margin-top: 8%;
+}
+#funcardfaleconosco{
+    background-color: white;
+    width: 80%;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;
 }
