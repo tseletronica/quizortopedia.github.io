@@ -3,10 +3,11 @@
                     top: -2%;
                     left: 0;
                     right: 0;
-                    z-index: 1000;
+                    z-index: 1010;
                     transition: background ease-out 0.2s;
                     background-color: white;
-                    opacity: 0.92
+                    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+                    
                 }
                 
                 #navbarNav {
@@ -17,25 +18,38 @@
                     border-radius: 5%;
                 }
                 /** MOdalidades **/
-                #modalidades{
-                    width: 100%;
+                #modalidades{                    
+                    width: 100%;                   
+                    background-image:url("/img/img_bolinhas2.svg"),url("/img/VectorEsquerdo.svg");
+                    background-repeat: no-repeat;
+                    background-position: 83% center,left center;
+                    background-size: 8%, 60%;
+                    
+                
+
+                   
                     
                 }
                 .modalidades{
                     width: 100%;
+                    
+                   
                 }
 
                 .modalidades img{ 
                     width: 25%;                   
                     position: absolute;
                     
+                    
                 }
                 #textoModalidades {
                     text-align: center;
                     margin-top: 2%;
+                   
                 }
                 #cardsModalidades{
                     width: 60%;
+                   
                    
 
                 }
@@ -44,6 +58,12 @@
                     box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
                     border-radius: 20px;
                     background-color: #ffffff;
+                    width: 500px;
+                    height: 354px;
+                    padding: 5%;
+                    
+                    
+                    
                 }
                 
                 #imgModalidades {

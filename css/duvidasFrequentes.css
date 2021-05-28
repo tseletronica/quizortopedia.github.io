@@ -22,8 +22,8 @@
     z-index: 1000;
     transition: background ease-out 0.2s;
     background:linear-gradient(185.96deg, #24b3Af 73.22%, #b4f3e9 151.7%);
-    opacity: 0.92;
     color: white;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
     
 }
 #footerFaleConosco {
