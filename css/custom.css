@@ -70,7 +70,14 @@
               /** Fim da  Seção Depoimentos **/ 
                 
                 #banner-principal {
-                    margin-top: 14%;
+                    margin-top: 10%;
+                    width: 100%;                                
+                }
+                .img-bolinhas-banner img{
+                        position: absolute;
+                        width: 5%;
+                        opacity: 0.5;
+
                 }
                 
                 #footer {
