@@ -16,10 +16,34 @@
                 #carouselQuiz {
                     border-radius: 5%;
                 }
-                
+                /** MOdalidades **/
+                #modalidades{
+                    width: 100%;
+                    background-color:red;
+                }
+                .modalidades{
+                    width: 100%;
+                }
+
+                .modalidades img{ 
+                    width: 25%;                   
+                    position: absolute;
+                    
+                }
                 #textoModalidades {
                     text-align: center;
                     margin-top: 2%;
+                }
+                #cardsModalidades{
+                    width: 60%;
+                   background-color: saddlebrown;
+
+                }
+
+                #CardModalidade{
+                    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+                    border-radius: 20px;
+                    background-color: #ffffff;
                 }
                 
                 #imgModalidades {
@@ -35,6 +59,8 @@
                 .card {
                     margin-top: 5%;
                     border-radius: 3%;
+                    
+                    
                 }
                 
                 #imgCardsSlider01 {
@@ -109,4 +135,10 @@
                 }
                 #banner-duvidas{
                     margin-top: 3%;
+                }
+                #carousel01{
+                    width: 70%;
+                    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+                    border-radius: 20px;
+                    background-color:#ffffff;
                 }
