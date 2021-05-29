@@ -20,7 +20,7 @@
                 /** MOdalidades **/
                 #modalidades{                    
                     width: 100%;                   
-                    background-image:url("/img/img_bolinhas2.svg"),url("/img/VectorEsquerdo.svg");
+                    background-image:url('/img/img_bolinhas2.svg'),url('/img/VectorEsquerdo.svg');
                     background-repeat: no-repeat;
                     background-position: 80% 55%,left center;
                     background-size: 8%, 60%;                 
