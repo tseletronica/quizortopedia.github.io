@@ -1,19 +1,21 @@
-#funcardfaleconosco{
-    background-color: white;
-    width: 80%;
-    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
-    border-radius: 20px;
-    margin-left: 14%;
-}
-#cardFaleConosco{
-    width: 100%;
+#faleConosco{
     margin-top: 8%;
-    background-image: url("/img/Vectordiretito.svg");
-    background-repeat: no-repeat;
-    background-position-x: 100%;
-    background-position-y: 230%;
-    
+    margin-bottom: 3%;
 }
+#bgCardfaleconosco{
+    background-color:white;
+    width: 70%;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    border-radius: 20px; 
+    padding: 3%;  
+   
+}
+#bgCardfaleconosco p{    
+    font-size: 15px;
+    line-height: 30px;
+}
+
+
 #headerfaleconosco {
     position: fixed;
     top: -2%;

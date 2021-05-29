@@ -59,7 +59,7 @@
         width: 90%;
     }
     #cardsModalidades{
-        width: 90%;    
+        width: 100%;    
     }
     #CardModalidade{
         box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
@@ -70,6 +70,9 @@
         width: 30%;
         margin-top: 2%;
         margin-left: 1%;
+    }
+    #formDuvidas{
+        margin-left:2%;
     }
 
     }

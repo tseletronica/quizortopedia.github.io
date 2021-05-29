@@ -78,8 +78,8 @@
     </div>
     <!--//Header -->
     <!--banner-->
-    <div  class="container-fluid"id="cardFaleConosco"> 
-        <div class="container"id="funcardfaleconosco">
+    <div class="container-fluid" id="faleConosco">
+        <div class="container" id="bgCardfaleconosco">
             <div class="row">
                 <div class="col-12 align-content-center">
                     <h1 style="text-align:center"> Fale Conosco</h1>
@@ -107,10 +107,11 @@
                     <form class="form" method="POST" action="./index.php"
                         style="width: 80%;margin-left: 0%;margin-top:20%">
                         <div class="mb-3">
-                            <input class="form-control" name="nome" placeholder="Nome" type="name"
+                            <input class="form-control" name="nome" placeholder="Nome" type="text"
                                 id="exampleInputEmail1" placeholder="Nome" aria-describedby="nomeHelp"
                                 style="background-color:whitesmoke;">
                         </div>
+
                         <div class="mb-3">
                             <input class="form-control" name="email" placeholder="Email" type="email"
                                 id="exampleInputEmail1" aria-describedby="emailHelp"
@@ -118,14 +119,23 @@
 
                         </div>
                         <div class="mb-3">
-                            <!--input class="form-control" name="mensagem" type="text" id="" cols="30" rows="10"
-                                placeholder="Conte-nos sua duvida."-->
+                            <select class="form-select form-select-md mb-3" id="assuntoSelect" name="assuntoSelect" style="background-color:whitesmoke;">
+                                <option selected>Assunto</option>
+                                <option value="1">Sugestão</option>
+                                <option value="2">Relcamação</option>
+                                <option value="3">Parceria</option>
+                                <option value="3">Outros</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            
                             <textarea style="background-color:whitesmoke;" class="form-control" name="mensagem" id=""
                                 cols="30" rows="5" placeholder="Conte-nos sua duvida."></textarea>
                         </div>
 
                         <div class="d-grid gap-2 d-md-flex justify-content-center">
-                            <button type="submit" class="btn btn-orange "> Enviar </button>
+                            <button type="submit" class="btn btn-orange " style="padding-left:5%;padding-right: 5%;"> Enviar </button>
                         </div>
 
                     </form>
