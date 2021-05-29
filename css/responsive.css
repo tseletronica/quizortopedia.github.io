@@ -37,13 +37,23 @@
             font-size: 14px;
             color: royalblue;
         }
+        #bgCardfaleconosco
+    {
+        background-color:blue;
+        width: 100%;
+        box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+        border-radius: 20px; 
+        padding: 3%;  
+       
+    }
       
     }
     /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
     
     @media only screen and (max-width: 479px) {
     p{
-        font-size: 14px;            
+        font-size: 14px;
+         
     }        
     .btn-lg,.btn-group-lg>.btn
     {        
@@ -72,24 +82,35 @@
     #formDuvidas{
         margin-left:2%;
     }
-    #faleConosco
-    {
-        margin-top: 8%;
-        margin-bottom: 3%;
-        background-color: violet;
-    }
     #bgCardfaleconosco
     {
-        background-color:blue;
+        margin-top: 15%;
+        background-color:white;
         width: 100%;
         box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
         border-radius: 20px; 
         padding: 3%;  
        
     }
-
+    #imagemEmail{
+        position:absolute;
+        z-index: -1;
+        
+     
     }
-    @media only screen and (max-width: 479px){
+    #formFale{
+        margin-left:10%;
+    }
+    #botaolaranja{
+        padding-left: 10%;
+        padding-right: 110%;
+        
         
     }
+         
+        
+    }
+
+    
+    
   
