@@ -35,17 +35,9 @@
     @media only screen and (min-width: 480px) and (max-width: 767px) {
         p {
             font-size: 14px;
-            color: royalblue;
+            
         }
-        #bgCardfaleconosco
-    {
-        background-color:blue;
-        width: 100%;
-        box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
-        border-radius: 20px; 
-        padding: 3%;  
-       
-    }
+ 
       
     }
     /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -92,28 +84,41 @@
         padding: 3%;  
        
     }
-    #imagemEmail{
+    #imagemEmail
+    {
         position:absolute;
         z-index: -1;
         
      
     }
-    #formFale{
+    #formFale
+    {
         margin-left:10%;
     }
-    #botaolaranja{
+    #botaolaranja
+    {
         padding-left: 10%;
         padding-right: 110%;
         
         
     }
-    #carouselMedalhas{                    
+    #carouselMedalhas
+    {                    
         width:100% ;
         
     }
-         
+    #tituloTermosDeUso
+{
+    margin-top: 8%;
+    text-align: center;
+    color:brown;
+    background: #25B4B0;
+    border-radius: 24px;
+    
+} 
+       
         
-    }
+}
 
     
     
