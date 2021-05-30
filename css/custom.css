@@ -16,6 +16,7 @@
                 
                 #carouselQuiz {
                     border-radius: 5%;
+                    
                 }
                 /** MOdalidades **/
                 #modalidades{                    
@@ -173,4 +174,18 @@
                     background-size: 3%;
                   
                                     
+                }
+                #titulomedalhas{
+                    text-align: center;
+                    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+                    border-radius: 20px;
+                    margin-top: 10%;
+                    background-color: white;                  
+                    background-image:url("/img/16_Bolhas.svg"),url("/img/16_Bolhas.svg");
+                    background-repeat: no-repeat,no-repeat;
+                    background-position: right top, left bottom;
+                }
+                #carouselMedalhas{                    
+                    width:80% ;
+                    
                 }
