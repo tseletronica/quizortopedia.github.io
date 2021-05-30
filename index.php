@@ -10,6 +10,7 @@ use PHPMailer\PHPMailer\Exception;
 //Variáveis
 $nome = $_POST['nome'];
 $email = $_POST['email'];
+$assunto = $_POST['assuntoSelect']?? 'Dúvida';
 $mensagem = $_POST['mensagem'];
 $data_envio = date('d/m/Y');
 $hora_envio = date('H:i:s');
@@ -30,9 +31,9 @@ try {
     $mail->addAddress('tseletronica@hotmail.com'); //Email destino
 
     $mail->isHTML(true); //Habilita o modo HTML
-    $mail->Subject = 'Assunto do Email';
+    $mail->Subject = $assunto;
     $mail->Body ="<html>
-    <head> <head>
+                                <head> <head>       
                         <p><b>Nome: </b>$nome</p>
                         <p><b>E-mail: </b>$email</p>
                         <p><b>Mensagem: </b>$mensagem</p>
