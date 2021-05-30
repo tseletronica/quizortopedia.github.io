@@ -1,107 +1,258 @@
-    
-    
-    
     /* Smaller than standard 960 (devices and browsers) */
-    
-     @media only screen and (max-width: 959px) {
+
+    @media only screen and (min-width: 959px) {
         p {
             font-size: 14px;
         }
+        #cardTermosDeUso {
+            width: 80%;
+            padding: 4%;
+            margin-top: 8%;
+            text-align: center;
+            color: white;
+            background: #25B4B0;
+            border-radius: 24px;          
+
+        }
+        #cardTermosDeUso h1 {
+            font-size: 22px;          
+
+        }
+        #cardTermosDeUso h5{
+            font-size: 16px;          
+
+        }
+
+        #termosDeUso {
+            width: 80%;
+            
+        }
+
+        #termosDeUso h5 {
+            color: #24B3AF;
+            font-size: 16px;;
+        }
+        #termosDeUso p {
+            font-size: 14px;;
+        }
     }
-    
     @media only screen and (max-width: 959px) {
         p {
             font-size: 14px;
         }
     }
+
+    @media only screen and (max-width: 959px) {
+        p {
+            font-size: 14px;
+        }
+    }
+
     /* Tablet Portrait size to standard 960 (devices and browsers) */
-    
+
     @media only screen and (min-width: 768px) and (max-width: 959px) {
         p {
             font-size: 14px;
         }
+
+        #cardTermosDeUso {
+            width: 80%;
+            margin-top: 15%;
+            text-align: center;
+            color: white;
+            background: #25B4B0;
+            border-radius: 24px;
+           
+
+        }
+        #cardTermosDeUso h1 {
+            font-size: 22px;          
+
+        }
+        #cardTermosDeUso h5{
+            font-size: 16px;          
+
+        }
+
+        #termosDeUso {
+            width: 80%;
+            margin-top: 5%;
+        }
+
+        #termosDeUso h5 {
+            color: #24B3AF;
+            font-size: 16px;;
+        }
+        #termosDeUso p {
+            font-size: 14px;;
+        }
+
+
     }
+
     /* All Mobile Sizes (devices and browser) */
-    
+
     @media only screen and (max-width: 767px) {
         p {
             font-size: 14px;
         }
+        
 
-       
+
     }
+
     /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-    
+
     @media only screen and (min-width: 480px) and (max-width: 767px) {
         p {
             font-size: 14px;
-            
-        }
- 
-      
-    }
-    /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-    
-    @media only screen and (max-width: 479px) {
-    p{
-        font-size: 14px;
-         
-    }        
-    .btn-lg,.btn-group-lg>.btn{        
-        font-size: 0.9rem;
-        border-radius: 0.3rem; 
-    }
-    #banner-principal{
-        margin-top: 15%;
-    }
-    #carousel01{
-        width: 90%;
-    }
-    #cardsModalidades{
-        width: 100%;    
-    }
-    #CardModalidade{
-        box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
-        border-radius: 20px;        
-        width:100%;    
-    }
-    #imgModalidades{
-        width: 30%;
-        margin-top: 2%;
-        margin-left: 1%;
-    }
-    #formDuvidas{
-        margin-left:2%;
-    }
-    #bgCardfaleconosco{
-        margin-top: 15%;
-        background-color:white;
-        width: 100%;
-        box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
-        border-radius: 20px; 
-        padding: 3%;        
-    }
-    #titulomedalhas{
-        width: 100%;
-    }
-    #imagemEmail{
-        position:absolute;
-        z-index: -1;           
-    }
-    #formFale{
-        margin-left:10%;
-    }
-    #botaolaranja{
-        padding-left: 10%;
-        padding-right: 110%;        
-    }
-    #carouselMedalhas{                    
-        width:100% ;
-    }
-          
-        
-}
 
-    
-    
-  
+        }
+
+        #cardTermosDeUso {
+            width: 80%;
+            margin-top: 20%;
+            text-align: center;
+            color: white;
+            background: #25B4B0;
+            border-radius: 24px;
+           
+
+        }
+        #cardTermosDeUso h1 {
+            font-size: 22px;          
+
+        }
+        #cardTermosDeUso h5{
+            font-size: 16px;          
+
+        }
+
+        #termosDeUso {
+            width: 80%;
+            margin-top: 5%;
+        }
+
+        #termosDeUso h5 {
+            color: #24B3AF;
+            font-size: 16px;;
+        }
+        #termosDeUso p {
+            font-size: 14px;;
+        }
+
+
+
+
+    }
+
+    /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+
+    @media only screen and (max-width: 479px) {
+        p {
+            font-size: 14px;
+
+        }
+
+        .btn-lg,
+        .btn-group-lg>.btn {
+            font-size: 0.9rem;
+            border-radius: 0.3rem;
+        }
+
+        #banner-principal {
+            margin-top: 15%;
+        }
+
+        #carousel01 {
+            width: 90%;
+        }
+
+        #cardsModalidades {
+            width: 100%;
+        }
+
+        #CardModalidade {
+            box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+            border-radius: 20px;
+            width: 100%;
+        }
+
+        #imgModalidades {
+            width: 30%;
+            margin-top: 2%;
+            margin-left: 1%;
+        }
+
+        #formDuvidas {
+            margin-left: 2%;
+        }
+
+        #bgCardfaleconosco {
+            margin-top: 15%;
+            background-color: white;
+            width: 100%;
+            box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+            border-radius: 20px;
+            padding: 3%;
+        }
+
+        #titulomedalhas {
+            width: 100%;
+        }
+
+        #imagemEmail {
+            position: absolute;
+            z-index: -1;
+        }
+
+        #formFale {
+            margin-left: 10%;
+        }
+
+        #botaolaranja {
+            padding-left: 10%;
+            padding-right: 110%;
+        }
+
+        #carouselMedalhas {
+            width: 100%;
+        }
+
+        #cardTermosDeUso {
+            width: 80%;
+            margin-top: 20%;
+            text-align: center;
+            color: white;
+            background: #25B4B0;
+            border-radius: 24px;
+           
+
+        }
+        #cardTermosDeUso h1 {
+            font-size: 20px;          
+
+        }
+        #cardTermosDeUso h5{
+            font-size: 14px;          
+
+        }
+
+        #termosDeUso {
+            width: 80%;
+            margin-top: 5%;
+        }
+
+        #termosDeUso h5 {
+            color: #24B3AF;
+            font-size: 14px;;
+        }
+        #termosDeUso p {
+            font-size: 12px;;
+        }
+
+
+
+
+
+    }
