@@ -4620,7 +4620,7 @@ fieldset:disabled .btn {
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #fff;
+    background-color:transparent;
     background-clip: border-box;
     
 }
