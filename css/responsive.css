@@ -84,6 +84,9 @@
         padding: 3%;  
        
     }
+    #titulomedalhas{
+        width: 100%;
+    }
     #imagemEmail
     {
         position:absolute;
