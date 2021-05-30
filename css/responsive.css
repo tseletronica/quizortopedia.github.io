@@ -204,16 +204,9 @@
         #imagemEmail {
             position: absolute;
             z-index: -1;
-        }
+        }    
 
-        #formFale {
-            margin-left: 10%;
-        }
-
-        #botaolaranja {
-            padding-left: 10%;
-            padding-right: 110%;
-        }
+        
 
         #carouselMedalhas {
             width: 100%;
