@@ -21,7 +21,7 @@ if ($assunto =='Assunto'){
     $assunto = $assunto;
 };
 
-$mail->CharSet = 'UTF-8';
+$mail->charSet = 'UTF-8';
 $mail = new PHPMailer(true);
 
 try {
@@ -39,8 +39,10 @@ try {
     $mail->isHTML(true); //Habilita o modo HTML
     $mail->Subject = $assunto;
     $mail->Body ="<html>
-                                <head> <head> 
-                        <h2><b>Nome: </b>$assunto</h2>      
+                        <head> 
+                        <meta charset='utf-8'> 
+                        </head> 
+                        <h3><b>Assunto: </b>$assunto</h3>      
                         <p><b>Nome: </b>$nome</p>
                         <p><b>E-mail: </b>$email</p>
                         <p><b>Mensagem: </b>$mensagem</p>
