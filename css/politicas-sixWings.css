@@ -15,7 +15,7 @@
 
 
 #headerfaleconosco {
-    position: fixed;
+    position: fixed;    
     top: -2%;
     left: 0;
     right: 0;
@@ -28,12 +28,12 @@
 }
 #footerFaleConosco {
     width: 100%;    
-    margin-top: 2%;
+    margin-top: 5%;
     padding-left: 5%;
     background-color: #24B3AF;
     color: white;
     text-align: center;
-    position:relative;
+    position: relative;
     bottom: 0;
 }
 #listadeduvidas{

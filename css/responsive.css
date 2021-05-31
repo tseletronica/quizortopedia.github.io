@@ -4,6 +4,7 @@
         p {
             font-size: 14px;
         }
+
         #cardTermosDeUso {
             width: 80%;
             padding: 4%;
@@ -11,49 +12,78 @@
             text-align: center;
             color: white;
             background: #25B4B0;
-            border-radius: 24px;          
+            border-radius: 24px;
 
         }
+
         #cardTermosDeUso h1 {
-            font-size: 22px;          
+            font-size: 22px;
 
         }
-        #cardTermosDeUso h5{
-            font-size: 16px;          
+
+        #cardTermosDeUso h5 {
+            font-size: 16px;
 
         }
 
         #termosDeUso {
             width: 80%;
-            
+
         }
 
         #termosDeUso h5 {
             color: #24B3AF;
-            font-size: 16px;;
+            font-size: 16px;
+            ;
         }
-        #termosDeUso p {
-            font-size: 14px;;
-        }
-       #politicaDePrivacidade{
-          margin-top: 8%;
-       }
-       #cardDoTituloPoliticas{
-        width: 70%;
-        padding: 5%;       
-        background-color: #25B4B0;
-        color: white;
-        border-radius: 25px;
-        text-align: center;
-        position:absolute;
-        
 
-       }
-       #indice01{
-           margin-top: 30%;
-       }
-       
+        #termosDeUso p {
+            font-size: 14px;
+
+        }
+
+        #politicaDePrivacidade {
+            margin-top: 6%;
+            min-height: 1000px;
+            
+        }
+
+        #cardDoTituloPoliticas {            
+            width: 100%;
+            padding: 3%;
+            background-color: #25B4B0;
+            color: white;
+            border-radius: 25px;
+            text-align: center;
+
+        }
+
+        .anchor {
+            padding-top: 15%;
+        }
+
+        #listaPolitica {
+            position: fixed;       
+            color: #25B4B0;
+            font-weight: bold;
+            line-height: 400%;                   
+            background-color:#FFFFFF;
+            box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+            border-radius: 24px;
+            padding-right: 1%;
+        }
+
+        #indice a {
+            color: #25B4B0;
+        }
+
+        #indice {
+            margin-top: 3%;          
+        }
+
+
     }
+
     @media only screen and (max-width: 959px) {
         p {
             font-size: 14px;
@@ -80,15 +110,17 @@
             color: white;
             background: #25B4B0;
             border-radius: 24px;
-           
+
 
         }
+
         #cardTermosDeUso h1 {
-            font-size: 22px;          
+            font-size: 22px;
 
         }
-        #cardTermosDeUso h5{
-            font-size: 16px;          
+
+        #cardTermosDeUso h5 {
+            font-size: 16px;
 
         }
 
@@ -99,10 +131,13 @@
 
         #termosDeUso h5 {
             color: #24B3AF;
-            font-size: 16px;;
+            font-size: 16px;
+            ;
         }
+
         #termosDeUso p {
-            font-size: 14px;;
+            font-size: 14px;
+            ;
         }
 
 
@@ -114,7 +149,7 @@
         p {
             font-size: 14px;
         }
-        
+
 
 
     }
@@ -134,15 +169,17 @@
             color: white;
             background: #25B4B0;
             border-radius: 24px;
-           
+
 
         }
+
         #cardTermosDeUso h1 {
-            font-size: 22px;          
+            font-size: 22px;
 
         }
-        #cardTermosDeUso h5{
-            font-size: 16px;          
+
+        #cardTermosDeUso h5 {
+            font-size: 16px;
 
         }
 
@@ -153,10 +190,13 @@
 
         #termosDeUso h5 {
             color: #24B3AF;
-            font-size: 16px;;
+            font-size: 16px;
+            ;
         }
+
         #termosDeUso p {
-            font-size: 14px;;
+            font-size: 14px;
+            ;
         }
 
 
@@ -222,7 +262,7 @@
         #imagemEmail {
             position: absolute;
             z-index: -1;
-        }          
+        }
 
         #carouselMedalhas {
             width: 100%;
@@ -235,15 +275,17 @@
             color: white;
             background: #25B4B0;
             border-radius: 24px;
-           
+
 
         }
+
         #cardTermosDeUso h1 {
-            font-size: 20px;          
+            font-size: 20px;
 
         }
-        #cardTermosDeUso h5{
-            font-size: 14px;          
+
+        #cardTermosDeUso h5 {
+            font-size: 14px;
 
         }
 
@@ -254,10 +296,13 @@
 
         #termosDeUso h5 {
             color: #24B3AF;
-            font-size: 14px;;
+            font-size: 14px;
+            ;
         }
+
         #termosDeUso p {
-            font-size: 12px;;
+            font-size: 12px;
+            ;
         }
 
 
