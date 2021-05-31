@@ -411,6 +411,25 @@
         .anchor {
             padding-top: 25%;
         }
+        #bannerDuvidas{
+            margin-top: 10%;
+            margin-right: 5%;
+            background-color: #24B3AF;
+            padding-top: 10%;
+            padding-bottom: 5%; 
+            padding-left: 15%;
+            align-items:flex-start;
+            color: white;
+        
+        }
+        #bannerDuvidas h1{
+            font-size: 20px;
+        
+        }
+        #bannerDuvidas h5{
+            font-size: 14px;
+        
+        }
 
 
 
