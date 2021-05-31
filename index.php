@@ -10,10 +10,16 @@ use PHPMailer\PHPMailer\Exception;
 //Variáveis
 $nome = $_POST['nome'];
 $email = $_POST['email'];
-$assunto = $_POST['assuntoSelect']?? 'Dúvida';
+$assunto = $_POST['assuntoSelect'];
 $mensagem = $_POST['mensagem'];
 $data_envio = date('d/m/Y');
 $hora_envio = date('H:i:s');
+
+if ($assunto =='Assunto'){
+        $assunto = 'Dúvida';
+}else{
+    $assunto = $assunto;
+};
 
 $mail->CharSet = 'UTF-8';
 $mail = new PHPMailer(true);
