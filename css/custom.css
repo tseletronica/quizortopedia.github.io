@@ -233,6 +233,7 @@
                     background-position: right bottom;
                 }
                 #cardplanos-tag{
+                    font-weight: 900;
                     margin-top: 8%;
                     background-color: #49C4BE;
                     text-align: right;
@@ -249,4 +250,5 @@
                 #cardplanos-titulos{
                     text-align: left;
                     margin-top: 9%;
+                    
                 }
