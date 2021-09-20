@@ -9,7 +9,7 @@ if(isset($_POST["email"]) && !empty($_POST["email"])){
     $body = "Nome ". $nome. "\n".
             "Mensagem ". $menssagem. "\n";
     $header = "From:serafim@softbuilder.com.br"."\r\n".
-            "X=Mailer:PHP/".phpversion();  
+                 "X=Mailer:PHP/".phpversion();  
                 
     if(mail($to,$subject,$body,$header)) {
         echo("Menssagem Enviada com sucesso");
