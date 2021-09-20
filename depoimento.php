@@ -16,7 +16,7 @@ $data_envio = date('d/m/Y');
 $hora_envio = date('H:i:s');
 
 if ($assunto =='Assunto'){
-        $assunto = 'Dúvida';
+        $assunto = 'Novo depoimento do usuário registrado!';
 }else{
     $assunto = $assunto;
 };
@@ -39,7 +39,7 @@ try {
     $mail->isHTML(true); //Habilita o modo HTML
     $mail->Subject = $assunto;
     $mail->Body ="<html>
-                                <head> <head> 
+                        <head> <head> 
                         <h2><b>Nome: </b>$assunto</h2>      
                         <p><b>Nome: </b>$nome</p>
                         <p><b>E-mail: </b>$email</p>
