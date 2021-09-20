@@ -42,7 +42,6 @@ try {
                         <head> <head> 
                         <h2><b>Nome: </b>$assunto</h2>      
                         <p><b>Nome: </b>$nome</p>
-                        <p><b>E-mail: </b>$email</p>
                         <p><b>Mensagem: </b>$mensagem</p>
                         <p>Este e-mail foi enviado em <b>$data_envio</b> às <b>$hora_envio</b></p>
                 </html>";
