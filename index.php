@@ -39,7 +39,7 @@ try {
     $mail->isHTML(true); //Habilita o modo HTML
     $mail->Subject = $assunto;
     $mail->Body ="<html>
-                                <head> <head> 
+                        <head> <head> 
                         <h2><b>Nome: </b>$assunto</h2>      
                         <p><b>Nome: </b>$nome</p>
                         <p><b>E-mail: </b>$email</p>
