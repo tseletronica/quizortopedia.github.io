@@ -12,7 +12,7 @@ if(isset($_POST["email"]) && !empty($_POST["email"])){
             "X=Mailer:PHP/".phpversion();  
                 
     if(mail($to,$subject,$body,$header)) {
-        echo("Email Enviado com sucesso");
+        echo("Menssagem Enviada com sucesso");
         header("Refresh: 10;Location: http://softbuilder.com.br/site-quizmed/index.html/");
 
     }else{
