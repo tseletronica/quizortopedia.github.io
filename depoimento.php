@@ -17,7 +17,7 @@ if(isset($_POST["email"]) && !empty($_POST["email"])){
 
     }else{
         echo("O Email não pode ser enviado");
-        header("Refresh: 10;Location: ./form.html");
+        header("Refresh: 10;Location: http://softbuilder.com.br/site-quizmed/index.html#depoimentos");
     }          
 
 };
