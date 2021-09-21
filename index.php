@@ -28,14 +28,14 @@ try {
     //$mail->SMTPDebug = SMTP::DEBUG_SERVER; //Habilita o modo debug
     $mail->SMTPDebug = 3;
     $mail->isSMTP(); //Habilita para SMTP
-    $mail->Host = 'smtp.gmail.com'; //Host do servidor de email
+    $mail->Host = 'smtp.zoho.com'; //Host do servidor de email
     $mail->SMTPAuth = true; //Habilita autenticação via SMTP
-    $mail->Username = 'tiagoserafim2014@gmail.com'; //usuario do email
-    $mail->Password = '050191Aa'; //senha do email
-    $mail->Port = 587; //Porta usada pelo servidor SMTP do gmail
+    $mail->Username = 'drjonatasbrito@gmail.com'; //usuario do email
+    $mail->Password = 'QuizMed2021*'; //senha do email
+    $mail->Port = 465; //Porta usada pelo servidor SMTP do gmail
 
-    $mail->setFrom('tiagoserafim2014@gmail.com'); //Email remetente
-    $mail->addAddress('tseletronica@hotmail.com'); //Email destino
+    $mail->setFrom('contato@quizmed.com.br'); //Email remetente
+    $mail->addAddress('contato@quizmed.com.br'); //Email destino
 
     $mail->isHTML(true); //Habilita o modo HTML
     $mail->Subject = $assunto;
