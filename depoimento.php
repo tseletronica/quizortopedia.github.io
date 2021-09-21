@@ -1,13 +1,13 @@
 <?php
 if(isset($_POST["email"]) && !empty($_POST["email"])){
     
-    $nome = addslashes($_POST["name"]);
-    $menssagem = addslashes($_POST["mesage"]);
+    $name = addslashes($_POST["name"]);
+    $message = addslashes($_POST["mesage"]);
 
     $to = "contato@quizmed.com.br";
     $subject = "Novo depoimento do usuário registrado!!!";
-    $body = "Nome ". $nome. "\n".
-            "Mensagem ". $menssagem. "\n";
+    $body = "Nome ". $name. "\n".
+            "Mensagem ". $message. "\n";
     $header = "From:serafim@softbuilder.com.br"."\r\n".
                  "X=Mailer:PHP/".phpversion();  
                 
