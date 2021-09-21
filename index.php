@@ -27,6 +27,7 @@ $mail = new PHPMailer(true);
 try {
     //$mail->SMTPDebug = SMTP::DEBUG_SERVER; //Habilita o modo debug
     $mail->SMTPDebug = 3;
+    $mail->SMTPSecure = 'tls';
     $mail->isSMTP(); //Habilita para SMTP
     $mail->Host = 'smtp.zoho.com'; //Host do servidor de email
     $mail->SMTPAuth = true; //Habilita autenticação via SMTP
