@@ -32,7 +32,7 @@ try {
     $mail->SMTPAuth = true; //Habilita autenticação via SMTP
     $mail->Username = 'drjonatasbrito@gmail.com'; //usuario do email
     $mail->Password = 'QuizMed2021*'; //senha do email
-    $mail->Port = 465; //Porta usada pelo servidor SMTP do gmail
+    $mail->Port = 587; //Porta usada pelo servidor SMTP do gmail
 
     $mail->setFrom('contato@quizmed.com.br'); //Email remetente
     $mail->addAddress('contato@quizmed.com.br'); //Email destino
