@@ -1,8 +1,8 @@
 <?php
-if(isset($_POST["email"]) && !empty($_POST["email"])){
+if(isset($_POST["submit"]) && !empty($_POST["submit"])){
     
     $name = addslashes($_POST["name"]);
-    $message = addslashes($_POST["mesage"]);
+    $message = addslashes($_POST["message"]);
 
     $to = "contato@quizmed.com.br";
     $subject = "Novo depoimento do usuário registrado!!!";
