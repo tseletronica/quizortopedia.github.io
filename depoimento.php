@@ -4,7 +4,7 @@ if(isset($_POST["email"]) && !empty($_POST["email"])){
     $nome = addslashes($_POST["name"]);
     $menssagem = addslashes($_POST["mesage"]);
 
-    $to = "contato@quizortopedia.com.br";
+    $to = "contato@quizmed.com.br";
     $subject = "Novo depoimento do usuário registrado!!!";
     $body = "Nome ". $nome. "\n".
             "Mensagem ". $menssagem. "\n";
