@@ -1,5 +1,5 @@
 <?php
-if(isset($_POST["submit"]) && !empty($_POST["submit"])){
+if(isset($_POST["message"])){
     
     $name = addslashes($_POST["name"]);
     $message = addslashes($_POST["message"]);
