@@ -15,9 +15,9 @@ $mensagem = $_POST['mensagem'];
 $data_envio = date('d/m/Y');
 $hora_envio = date('H:i:s');
 
-if ($assunto =='Assunto'){
-        $assunto = 'Dúvida';
-}else{
+if ($assunto == 'Assunto') {
+    $assunto = 'Dúvida';
+} else {
     $assunto = $assunto;
 };
 
@@ -27,7 +27,7 @@ $mail = new PHPMailer(true);
 try {
     $mail->SMTPDebug = SMTP::DEBUG_SERVER; //Habilita o modo debug
     //$mail->SMTPDebug = 3;
-    $mail->SMTPSecure = 'tls';   
+    $mail->SMTPSecure = 'tls';
     $mail->isSMTP(); //Habilita para SMTP
     $mail->Host = 'mail.softbuilder.com.br'; //Host do servidor de email
     $mail->SMTPAuth = true; //Habilita autenticação via SMTP
@@ -35,12 +35,29 @@ try {
     $mail->Password = '@sb4414@'; //senha do email
     $mail->Port = 587; //Porta usada pelo servidor SMTP
 
+    //Set the encryption mechanism to use:
+    // - SMTPS (implicit TLS on port 465) or
+    // - STARTTLS (explicit TLS on port 587)
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+
+    //Custom connection options
+    //Note that these settings are INSECURE
+    $mail->SMTPOptions = array(
+        'ssl' => [
+            'verify_peer' => true,
+            'verify_depth' => 3,
+            'allow_self_signed' => true,
+            'peer_name' => 'mail.softbuilder.com.br',
+            'cafile' => '/etc/ssl/ca_cert.pem',
+        ],
+    );
+
     $mail->setFrom('quizmed@softbuilder.com.br'); //Email remetente
     $mail->addAddress('contato@quizmed.com.br'); //Email destino
 
     $mail->isHTML(true); //Habilita o modo HTML
     $mail->Subject = $assunto;
-    $mail->Body ="<html>
+    $mail->Body = "<html>
                         <head> <head> 
                         <h2><b>Nome: </b>$assunto</h2>      
                         <p><b>Nome: </b>$nome</p>
