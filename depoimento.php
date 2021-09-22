@@ -12,7 +12,7 @@ $to = "tiagoserafim2014@gmail.com";
 $subject = "Novo depoimento do usuário registrado!!!";
 $body = "'Nome: '.$nome.'\n'
         'Mensagem: '.$mensagem.'\n'";
-$header ="From:quizmed@softbuilder.com.br";
+$header ="From:serafim@softbuilder.com.br";
         
 if(mail($to,$subject,$body,$header)){
     echo("Obrigado, sua mensagem foi enviada com sucesso!");
