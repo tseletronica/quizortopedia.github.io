@@ -2,7 +2,7 @@
 //Variáveis
 
 $nome = $_POST['nome'];
-$mensagem = $_POST['msg'];
+$mensagem = $_POST['mensagem'];
 $data_envio = date('d/m/Y');
 $hora_envio = date('H:i:s');
 // Compo E-mail
