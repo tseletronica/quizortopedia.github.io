@@ -6,34 +6,26 @@
 
 <?php
 
-require_once('../class.phpmailer.php');
+require_once '../class.phpmailer.php';
 
-$mail             = new PHPMailer(); // defaults to using php "mail()"
+$mail = new PHPMailer(true); //defaults to using php "mail()"; the true param means it will throw exceptions on errors, which we need to catch
 
-$body             = file_get_contents('contents.html');
-$body             = preg_replace('/[\]/','',$body);
-
-
-$mail->SetFrom('quizmed@softbuilder.com.br', 'First Last');
-
-$mail->AddReplyTo("quizmed@softbuilder.com.br","First Last");
-
-$address = "contato@quizmed.com.br";
-$mail->AddAddress($address, "John Doe");
-
-$mail->Subject    = "PHPMailer Test Subject via mail(), basic";
-
-$mail->AltBody    = "To view the message, please use an HTML compatible email viewer!"; // optional, comment out and test
-
-$mail->MsgHTML($body);
-
-$mail->AddAttachment("images/phpmailer.gif");      // attachment
-$mail->AddAttachment("images/phpmailer_mini.gif"); // attachment
-
-if(!$mail->Send()) {
-  echo "Mailer Error: " . $mail->ErrorInfo;
-} else {
-  echo "Message sent!";
+try {
+  $mail->AddReplyTo('quizmed@softbuilder.com.br', 'First Last');
+  $mail->AddAddress('contato@quizmed.com.br', 'John Doe');
+  $mail->SetFrom('quizmed@softbuilder.com.br', 'First Last');
+  $mail->AddReplyTo('quizmed@softbuilder.com.br', 'First Last');
+  $mail->Subject = 'PHPMailer Test Subject via mail(), advanced';
+  $mail->AltBody = 'To view the message, please use an HTML compatible email viewer!'; // optional - MsgHTML will create an alternate automatically
+  $mail->MsgHTML(file_get_contents('contents.html'));
+  $mail->AddAttachment('images/phpmailer.gif');      // attachment
+  $mail->AddAttachment('images/phpmailer_mini.gif'); // attachment
+  $mail->Send();
+  echo "Message Sent OK\n";
+} catch (phpmailerException $e) {
+  echo $e->errorMessage(); //Pretty error messages from PHPMailer
+} catch (Exception $e) {
+  echo $e->getMessage(); //Boring error messages from anything else!
 }
 
 ?>
