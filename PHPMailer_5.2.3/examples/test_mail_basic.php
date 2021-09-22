@@ -20,7 +20,7 @@ try {
   $mail->AddReplyTo($email);
   $mail->Subject = 'Novo depoimento do usuário registrado!!!';
   $mail->AltBody = 'Para visualizar a mensagem, use um visualizador de e-mail compatível com HTML'; // optional - MsgHTML will create an alternate automatically
-  $mail->msgHTML("<html><h1> teste </h1> </html>");
+  $mail->msgHTML("<html>de: {$nome}<br/>email: {$email}<br/>mensagem: {$mensagem}</html>");
   //$mail->MsgHTML(file_get_contents('contents.html'));
   //$mail->AddAttachment('images/phpmailer.gif');      // attachment
   //$mail->AddAttachment('images/phpmailer_mini.gif'); // attachment
