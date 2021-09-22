@@ -13,6 +13,7 @@ $mail             = new PHPMailer(); // defaults to using php "mail()"
 $body             = file_get_contents('contents.html');
 $body             = preg_replace('/[\]/','',$body);
 
+
 $mail->SetFrom('quizmed@softbuilder.com.br', 'First Last');
 
 $mail->AddReplyTo("quizmed@softbuilder.com.br","First Last");
