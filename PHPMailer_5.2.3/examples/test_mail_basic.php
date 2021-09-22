@@ -11,6 +11,7 @@ $nome = "teste";
 $email = "teste@teste.com.br";
 $mensagem = "mensagem aqui";
 
+
 $mail = new PHPMailer(true); //defaults to using php "mail()"; the true param means it will throw exceptions on errors, which we need to catch
 
 try {
