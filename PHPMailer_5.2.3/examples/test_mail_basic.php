@@ -13,11 +13,11 @@ $mail             = new PHPMailer(); // defaults to using php "mail()"
 $body             = file_get_contents('contents.html');
 $body             = preg_replace('/[\]/','',$body);
 
-$mail->SetFrom('name@yourdomain.com', 'First Last');
+$mail->SetFrom('quizmed@softbuilder.com.br', 'First Last');
 
-$mail->AddReplyTo("name@yourdomain.com","First Last");
+$mail->AddReplyTo("quizmed@softbuilder.com.br","First Last");
 
-$address = "whoto@otherdomain.com";
+$address = "contato@quizmed.com.br";
 $mail->AddAddress($address, "John Doe");
 
 $mail->Subject    = "PHPMailer Test Subject via mail(), basic";
