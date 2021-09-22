@@ -7,17 +7,19 @@
 <?php
 
 require_once '../class.phpmailer.php';
+$body = " '<h1> teste /h1>'";
 
 $mail = new PHPMailer(true); //defaults to using php "mail()"; the true param means it will throw exceptions on errors, which we need to catch
 
 try {
   $mail->AddReplyTo('quizmed@softbuilder.com.br', 'First Last');
-  $mail->AddAddress('contato@quizmed.com.br', 'John Doe');
+  $mail->AddAddress('contato@quizmed.com.br', 'Formulário de Contato');
   $mail->SetFrom('quizmed@softbuilder.com.br', 'First Last');
   $mail->AddReplyTo('quizmed@softbuilder.com.br', 'First Last');
-  $mail->Subject = 'PHPMailer Test Subject via mail(), advanced';
-  $mail->AltBody = 'To view the message, please use an HTML compatible email viewer!'; // optional - MsgHTML will create an alternate automatically
-  $mail->MsgHTML(file_get_contents('contents.html'));
+  $mail->Subject = 'Novo depoimento do usuário registrado!!!';
+  $mail->AltBody = 'Para visualizar a mensagem, use um visualizador de e-mail compatível com HTML'; // optional - MsgHTML will create an alternate automatically
+  $mail->msgHTML( $body);
+  //$mail->MsgHTML(file_get_contents('contents.html'));
   $mail->AddAttachment('images/phpmailer.gif');      // attachment
   $mail->AddAttachment('images/phpmailer_mini.gif'); // attachment
   $mail->Send();
