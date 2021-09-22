@@ -10,14 +10,6 @@ require_once '../class.phpmailer.php';
 $nome = "teste";
 $email = "teste@teste.com.br";
 $mensagem = "mensagem aqui";
-$body = "<html>
-        
-          'Nome: '. $nome. '\n'.
-          'Email: '.$email. '\n'.
-          'Mensagem: '. $mensagem. '\n'
-
-          </html>
-        ";
 
 $mail = new PHPMailer(true); //defaults to using php "mail()"; the true param means it will throw exceptions on errors, which we need to catch
 
@@ -28,7 +20,7 @@ try {
   $mail->AddReplyTo($email);
   $mail->Subject = 'Novo depoimento do usuário registrado!!!';
   $mail->AltBody = 'Para visualizar a mensagem, use um visualizador de e-mail compatível com HTML'; // optional - MsgHTML will create an alternate automatically
-  $mail->msgHTML( $body);
+  $mail->msgHTML("<html><h1> teste </h1> </html>");
   //$mail->MsgHTML(file_get_contents('contents.html'));
   //$mail->AddAttachment('images/phpmailer.gif');      // attachment
   //$mail->AddAttachment('images/phpmailer_mini.gif'); // attachment
