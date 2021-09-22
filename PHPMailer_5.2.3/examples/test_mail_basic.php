@@ -10,10 +10,13 @@ require_once '../class.phpmailer.php';
 $nome = "teste";
 $email = "teste@teste.com.br";
 $mensagem = "mensagem aqui";
-$body = "
-        'Nome: '. $nome. '\n'.
-        'Email: '.$email. '\n'.
-        'Mensagem: '. $mensagem. '\n'
+$body = "<html>
+        
+          'Nome: '. $nome. '\n'.
+          'Email: '.$email. '\n'.
+          'Mensagem: '. $mensagem. '\n'
+
+          </html>
         ";
 
 $mail = new PHPMailer(true); //defaults to using php "mail()"; the true param means it will throw exceptions on errors, which we need to catch
