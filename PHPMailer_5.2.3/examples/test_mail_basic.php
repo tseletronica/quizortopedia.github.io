@@ -9,13 +9,20 @@
   <?php
 
   require_once '../class.phpmailer.php';
-  
+
   $nome = $_POST['nome'];
   $email = $_POST['email'];
   $mensagem = $_POST['mensagem'];
-  $subject = $_POST['assuntoSelect']; 
-
-
+   
+  if( $_POST['assuntoSelect']==='Assunto'){
+    $subject = 'Assunto Indefinido';
+  }elseif (!empty($_POST['assuntoSelect'])) {
+    $subject = 'Novo depoimento do usuário registrado!';
+  }else {
+    $subject = $_POST['assuntoSelect'];
+  }
+  $assunto = $subject;
+    
   $mail = new PHPMailer(true); //defaults to using php "mail()"; the true param means it will throw exceptions on errors, which we need to catch
 
   try {
@@ -23,9 +30,10 @@
     $mail->AddAddress('contato@quizmed.com.br', 'Contato pelo Site');
     $mail->SetFrom('quizmed@softbuilder.com.br', 'quizmed');
     $mail->AddReplyTo($email);
-    $mail->Subject = ($subject);
+    $mail->Subject = ($subject); 
     $mail->AltBody = 'Para visualizar a mensagem, use um visualizador de e-mail compatível com HTML'; // optional - MsgHTML will create an alternate automatically
     $mail->msgHTML("
+                    <h1> de:{$assunto} </h1> <br/>
                     <h2> de:{$nome} </h2> <br/>
                     <h3> mensagem:<br>{$mensagem}</h3>
                     <h3> email:{$email} </h3><br/>
