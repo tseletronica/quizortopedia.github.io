@@ -1,7 +1,7 @@
 <?php
 
 //checka variavel
-if(isset($_POST(['mensagem'])) && !empty($_POST(['mensagem']))){
+if(null!==($_POST(['mensagem'])) && !empty($_POST(['mensagem']))){
     //variaveis
     $nome = addslashes($_POST(['nome']));
     $mensagem = addslashes($_POST(['mensagem']));
