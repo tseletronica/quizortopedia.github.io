@@ -33,9 +33,10 @@
     $mail->Subject = ($subject); 
     $mail->AltBody = 'Para visualizar a mensagem, use um visualizador de e-mail compatível com HTML'; // optional - MsgHTML will create an alternate automatically
     $mail->msgHTML("
-                    <h1> de:{$assunto} </h1> <br/>
+                    <h1> {$assunto} </h1> 
                     <h2> de:{$nome} </h2> <br/>
-                    <h3> mensagem:<br>{$mensagem}</h3>
+                    <h3 style="color:blue;"> mensagem:<br><h3>
+                    <h3> {$mensagem}</h3>
                     <h3> email:{$email} </h3><br/>
                   ");
     //$mail->MsgHTML(file_get_contents('contents.html'));
