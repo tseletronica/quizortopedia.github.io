@@ -31,7 +31,7 @@ try {
     $mail->isSMTP(); //Habilita para SMTP
     $mail->Host = 'mail.softbuilder.com.br'; //Host do servidor de email
     $mail->SMTPAuth = true; //Habilita autenticação via SMTP
-    $mail->Username = 'quizmed@softbuilder.com'; //usuario do email
+    $mail->Username = 'quizmed@softbuilder.com.br'; //usuario do email
     $mail->Password = '@sb4414@'; //senha do email
     $mail->Port = 587; //Porta usada pelo servidor SMTP do gmail
 
