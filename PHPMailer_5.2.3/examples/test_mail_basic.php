@@ -11,20 +11,20 @@
   require_once '../class.phpmailer.php';
 
   $nome = $_POST['nome'];
-  $email = isset($_POST['email']) ? $_POST['email']: " Email não enviado";
+  $email = isset($_POST['email']) ? $_POST['email'] : " Email não enviado";
   $mensagem = $_POST['mensagem'];
-  $subject = isset($_POST['assuntoSelect']) ? $_POST['assuntoSelect'] : null ;
-
-  if( $_POST['assuntoSelect']==='Assunto'){
-    $subject = 'Assunto Indefinido';
-  }elseif (($_POST['assuntoSelect'])===null) {
-    $subject = 'Novo depoimento do usuário registrado!';
-  }else {
-    $subject = $_POST['assuntoSelect'];
+  if (isset($_POST['assuntoSelect'])) {
+    if ($_POST['assuntoSelect'] === 'Assunto') {
+      $subject = 'Assunto Indefinido';
+    } else {
+      $subject = $_POST['assuntoSelect'];
+    }
+  } else {
+    $subject = "uma string";
   }
 
   $assunto = $subject;
-    
+
   $mail = new PHPMailer(true); //defaults to using php "mail()"; the true param means it will throw exceptions on errors, which we need to catch
 
   try {
@@ -32,7 +32,7 @@
     $mail->AddAddress('contato@quizmed.com.br', 'Contato pelo Site');
     $mail->SetFrom('quizmed@softbuilder.com.br', 'quizmed');
     $mail->AddReplyTo($email);
-    $mail->Subject = ($subject); 
+    $mail->Subject = ($subject);
     $mail->AltBody = 'Para visualizar a mensagem, use um visualizador de e-mail compatível com HTML'; // optional - MsgHTML will create an alternate automatically
     $mail->msgHTML("
                     <h1> {$assunto} </h1> 
