@@ -9,6 +9,7 @@
   <?php
 
   require_once './PHPMailer_5.2.3/class.phpmailer.php';
+  $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
   $nome = $_POST['nome'];
 
@@ -30,11 +31,10 @@
   
   $mensagem = $_POST['mensagem'];
   $assunto = $subject;
+  
 
   $mail = new PHPMailer(true); //defaults to using php "mail()"; the true param means it will throw exceptions on errors, which we need to catch
-    $headers   = 'MIME-Version: 1.0' . "\r\n";
-    $headers  .= "Content-type: text/html;\r\n charset=utf-8\r\n";
-    $headers  .= "Content-Transfer-Encoding: 8bit\r\n";
+ 
 
   try {
     $mail->$headers;
