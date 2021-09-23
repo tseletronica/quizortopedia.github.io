@@ -52,22 +52,15 @@
                     <p> {$mensagem}</p><br><br><br>
                     <h5> email:{$email} </h5>
                   ");
+    //$mail->MsgHTML(file_get_contents('contents.html'));
+    //$mail->AddAttachment('images/phpmailer.gif');      // attachment
+    //$mail->AddAttachment('images/phpmailer_mini.gif'); // attachment
     $mail->Send();
-    echo '<!DOCTYPE html>';
-    echo '<html xmlns="http://www.w3.org/1999/xhtml">';
-    echo '<head>';
-    echo '   <meta http-equiv="refresh" content="10; url=http://softbuilder.com.br/site-quizmed/index.html">';
-    echo '</head>';
-    echo '<body>';
-    echo '<p>Seu email foi enviado com sucesso.</p>';
-    echo '<a href="http://softbuilder.com.br/site-quizmed/index.html">Prosseguir</a>';
-    echo '</body>';
-    echo '</html>';
-    
+    echo "<script>alert('Mensagem enviada com sucesso');</script>";
+    header('Location: index.html');
     
   } catch (phpmailerException $e) {
     echo $e->errorMessage(); //Pretty error messages from PHPMailer
-     
   } catch (Exception $e) {
     echo $e->getMessage(); //Boring error messages from anything else!
   }
