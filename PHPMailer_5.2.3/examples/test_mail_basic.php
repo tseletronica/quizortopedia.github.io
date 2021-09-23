@@ -11,11 +11,13 @@
   require_once '../class.phpmailer.php';
 
   $nome = $_POST['nome'];
-  if(isset($_POST['email'])){
+
+  if (isset($_POST['email'])) {
     $email = $_POST['email'];
-  }else{
-    $email = "sem email"
-  };
+  } else {
+    $email = "sem email";
+  }
+
   if (isset($_POST['assuntoSelect'])) {
     if ($_POST['assuntoSelect'] === 'Assunto') {
       $subject = 'Assunto Indefinido';
@@ -25,7 +27,7 @@
   } else {
     $subject = "uma string";
   }
-  
+
   $mensagem = $_POST['mensagem'];
   $assunto = $subject;
 
