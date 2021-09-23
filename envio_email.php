@@ -54,7 +54,16 @@
                   ");
     
     $mail->Send();
-    echo "<script>alert('Email enviado com Sucesso!);location.href=\"index.html\";</script>";
+    echo '<!DOCTYPE html>';
+    echo '<html xmlns="http://www.w3.org/1999/xhtml">';
+    echo '<head>';
+    echo '   <meta http-equiv="refresh" content="10; url=http://softbuilder.com.br/site-quizmed/index.html">';
+    echo '</head>';
+    echo '<body>';
+    echo '<p>Seu email foi enviado com sucesso.</p>';
+    echo '<a href="http://softbuilder.com.br/site-quizmed/index.html">Prosseguir</a>';
+    echo '</body>';
+    echo '</html>';    
     
   } catch (phpmailerException $e) {
     echo $e->errorMessage(); //Pretty error messages from PHPMailer
