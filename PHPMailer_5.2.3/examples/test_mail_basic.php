@@ -51,7 +51,7 @@
     //$mail->AddAttachment('images/phpmailer.gif');      // attachment
     //$mail->AddAttachment('images/phpmailer_mini.gif'); // attachment
     $mail->Send();
-    echo "Mensagem enviada com sucesso,obrigado\n";
+    echo "Mensagem enviada com sucesso!\n";
   } catch (phpmailerException $e) {
     echo $e->errorMessage(); //Pretty error messages from PHPMailer
   } catch (Exception $e) {
