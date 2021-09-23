@@ -32,10 +32,12 @@
   $assunto = $subject;
 
   $mail = new PHPMailer(true); //defaults to using php "mail()"; the true param means it will throw exceptions on errors, which we need to catch
+    $headers   = 'MIME-Version: 1.0' . "\r\n";
+    $headers  .= "Content-type: text/html;\r\n charset=utf-8\r\n";
+    $headers  .= "Content-Transfer-Encoding: 8bit\r\n";
 
   try {
-    $mail ->  $headers  = 'MIME-Version: 1.0' . "\r\n";
-              $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+    $mail->$headers;
     $mail->AddReplyTo('quizmed@softbuilder.com.br', 'quizmed');
     $mail->AddAddress('contato@quizmed.com.br', 'Contato pelo Site');
     $mail->SetFrom('quizmed@softbuilder.com.br', 'quizmed');
