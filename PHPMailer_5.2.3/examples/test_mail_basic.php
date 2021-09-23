@@ -16,7 +16,7 @@
    
   if( $_POST['assuntoSelect']==='Assunto'){
     $subject = 'Assunto Indefinido';
-  }elseif (!empty($_POST['assuntoSelect'])) {
+  }elseif (empty($_POST['assuntoSelect'])) {
     $subject = 'Novo depoimento do usuário registrado!';
   }else {
     $subject = $_POST['assuntoSelect'];
