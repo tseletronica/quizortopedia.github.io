@@ -9,7 +9,7 @@
   <?php
 
   require_once './PHPMailer_5.2.3/class.phpmailer.php';
-  $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+ 
 
   $nome = $_POST['nome'];
 
@@ -26,7 +26,7 @@
       $subject = $_POST['assuntoSelect'];
     }
   } else {
-    $subject = "Novo depoimento do usuário registrado!!";
+    $subject ='=?UTF-8?B?' . base64_encode("Novo depoimento do usuário registrado!!");
   }
   
   $mensagem = $_POST['mensagem'];
@@ -37,7 +37,7 @@
  
 
   try {
-    $mail->$headers;
+  
     $mail->AddReplyTo('quizmed@softbuilder.com.br', 'quizmed');
     $mail->AddAddress('contato@quizmed.com.br', 'Contato pelo Site');
     $mail->SetFrom('quizmed@softbuilder.com.br', 'quizmed');
