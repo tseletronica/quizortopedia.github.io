@@ -15,7 +15,7 @@
   if (isset($_POST['email'])) {
     $email = $_POST['email'];
   } else {
-    $email = "sem email";
+    $email = "quizmed@softbuilder.com.br";
   }
 
   if (isset($_POST['assuntoSelect'])) {
