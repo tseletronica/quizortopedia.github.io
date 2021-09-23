@@ -362,17 +362,22 @@
                 </div>
                 <!--//imagem-->
                 <div class="col-md-5 col-12" id="formDuvidas">
-                    <form class="form" method="POST" action="./index.php">
+                    <form class="form" method="POST" action="./envio_email.php">
+                        
                         <div class="mb-3">
                             <input class="form-control" name="nome" placeholder="Nome" type="name"
-                                id="exampleInputEmail1" placeholder="Nome" aria-describedby="nomeHelp"
-                                style="background-color:whitesmoke;">
+                                id="exampleInputEmail1" placeholder="Nome" aria-describedby="nomeHelp">
                         </div>
                         <div class="mb-3">
                             <input class="form-control" name="email" placeholder="Email" type="email"
                                 id="exampleInputEmail1" aria-describedby="emailHelp"
                                 style="background-color:whitesmoke;">
 
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-select form-select-md mb-3" id="assuntoSelect" name="assuntoSelect" style="background-color:whitesmoke;">
+                                <option selected>Dúvidas</option>                               
+                            </select>
                         </div>
                         <div class="mb-3">
                             <textarea style="background-color:whitesmoke;" class="form-control" name="mensagem" id=""
