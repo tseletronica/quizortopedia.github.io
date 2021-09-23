@@ -27,7 +27,7 @@
   } else {
     $subject = "uma string";
   }
-
+  
   $mensagem = $_POST['mensagem'];
   $assunto = $subject;
 
