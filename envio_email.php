@@ -59,9 +59,13 @@
     echo "<script>alert('Mensagem enviada com sucesso');</script>";
     header("Refresh: 0.1; url = index.html");
   } catch (phpmailerException $e) {
-    echo $e->errorMessage(); //Pretty error messages from PHPMailer
+    echo "<script>alert('Sua Mensagem não foi enviada, tente novamente');</script>";
+    header("Refresh: 0.1; url = index.html");
+    //echo $e->errorMessage(); //Pretty error messages from PHPMailer
   } catch (Exception $e) {
-    echo $e->getMessage(); //Boring error messages from anything else!
+    echo "<script>alert('Sua Mensagem não foi enviada, tente novamente');</script>";
+    header("Refresh: 0.1; url = index.html");
+    //echo $e->getMessage(); //Boring error messages from anything else!
   }
 
   ?>
