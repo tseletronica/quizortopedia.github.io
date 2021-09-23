@@ -34,10 +34,10 @@
     $mail->AltBody = 'Para visualizar a mensagem, use um visualizador de e-mail compatível com HTML'; // optional - MsgHTML will create an alternate automatically
     $mail->msgHTML("
                     <h1> {$assunto} </h1> 
-                    <h2> De:{$nome} </h2> <br/>
-                    <font color='#000099'><h3> mensagem:<h3></font><br>
-                    <h3> {$mensagem}</h3>
-                    <h3> email:{$email} </h3><br/>
+                    <h2> De:{$nome} </h2>
+                    <font color='#000099'><h3> mensagem:<h3></font>
+                    <p> {$mensagem}</p><br>
+                    <h3> email:{$email} </h3>
                   ");
     //$mail->MsgHTML(file_get_contents('contents.html'));
     //$mail->AddAttachment('images/phpmailer.gif');      // attachment
