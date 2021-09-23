@@ -57,9 +57,11 @@
     //$mail->AddAttachment('images/phpmailer_mini.gif'); // attachment
     $mail->Send();
     echo "Mensagem enviada com sucesso!\n";
+    header('Refresh: 10 http://softbuilder.com.br/site-quizmed/index.html'); 
     
   } catch (phpmailerException $e) {
     echo $e->errorMessage(); //Pretty error messages from PHPMailer
+     
   } catch (Exception $e) {
     echo $e->getMessage(); //Boring error messages from anything else!
   }
