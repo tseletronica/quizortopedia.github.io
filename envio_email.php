@@ -9,7 +9,7 @@
   <?php
 
   require_once './PHPMailer_5.2.3/class.phpmailer.php';
-  
+ 
 
   $nome = $_POST['nome'];
 
@@ -26,7 +26,7 @@
       $subject = $_POST['assuntoSelect'];
     }
   } else {
-    $subject ='=?UTF-8?B?' . base64_encode("Novo depoimento do usuário registrado!!");
+    $subject = "Novo depoimento do usuário registrado!!";
   }
   
   $mensagem = $_POST['mensagem'];
@@ -38,7 +38,7 @@
 
   try {
     $mail->CharSet = 'UTF-8';
-    $mail->Encoding = 'base64';  
+    $mail->Encoding = 'base64';
     $mail->AddReplyTo('quizmed@softbuilder.com.br', 'quizmed');
     $mail->AddAddress('contato@quizmed.com.br', 'Contato pelo Site');
     $mail->SetFrom('quizmed@softbuilder.com.br', 'quizmed');
