@@ -57,7 +57,7 @@
     //$mail->AddAttachment('images/phpmailer_mini.gif'); // attachment
     $mail->Send();
     echo "<script>alert('Mensagem enviada com sucesso');</script>";
-    header("Refresh: 20; url = index.html");
+    header("Refresh: 5; url = index.html");
   } catch (phpmailerException $e) {
     echo $e->errorMessage(); //Pretty error messages from PHPMailer
   } catch (Exception $e) {
