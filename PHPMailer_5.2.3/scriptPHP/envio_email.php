@@ -25,7 +25,7 @@
       $subject = $_POST['assuntoSelect'];
     }
   } else {
-    $subject = "uma string";
+    $subject = "Novo depoimento do usuário registrado!!";
   }
   
   $mensagem = $_POST['mensagem'];
