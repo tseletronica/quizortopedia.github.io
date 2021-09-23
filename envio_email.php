@@ -9,9 +9,7 @@
   <?php
 
   require_once './PHPMailer_5.2.3/class.phpmailer.php';
-  $mail->CharSet = 'UTF-8';
-  $mail->Encoding = 'base64';
- 
+  
 
   $nome = $_POST['nome'];
 
@@ -39,7 +37,8 @@
  
 
   try {
-  
+    $mail->CharSet = 'UTF-8';
+    $mail->Encoding = 'base64';  
     $mail->AddReplyTo('quizmed@softbuilder.com.br', 'quizmed');
     $mail->AddAddress('contato@quizmed.com.br', 'Contato pelo Site');
     $mail->SetFrom('quizmed@softbuilder.com.br', 'quizmed');
