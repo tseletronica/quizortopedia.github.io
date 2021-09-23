@@ -52,7 +52,6 @@
                     <p> {$mensagem}</p><br><br><br>
                     <h5> email:{$email} </h5>
                   ");
-    
     $mail->Send();
     echo '<!DOCTYPE html>';
     echo '<html xmlns="http://www.w3.org/1999/xhtml">';
@@ -63,7 +62,8 @@
     echo '<p>Seu email foi enviado com sucesso.</p>';
     echo '<a href="http://softbuilder.com.br/site-quizmed/index.html">Prosseguir</a>';
     echo '</body>';
-    echo '</html>';    
+    echo '</html>';
+    
     
   } catch (phpmailerException $e) {
     echo $e->errorMessage(); //Pretty error messages from PHPMailer
