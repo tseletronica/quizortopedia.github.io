@@ -9,6 +9,8 @@
   <?php
 
   require_once './PHPMailer_5.2.3/class.phpmailer.php';
+  $mail->CharSet = 'UTF-8';
+  $mail->Encoding = 'base64';
  
 
   $nome = $_POST['nome'];
