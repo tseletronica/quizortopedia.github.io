@@ -11,9 +11,10 @@
   require_once '../class.phpmailer.php';
 
   $nome = $_POST['nome'];
-  $email = $_POST['email'];
+  $email = isset($_POST['email']) ? $_POST['email']: " Email não enviado";
   $mensagem = $_POST['mensagem'];
-   
+  $subject = isset($_POST['assuntoSelect']) ? $_POST['assuntoSelect'] : "Novo depoimento do usuário registrado!" ;
+
   if( $_POST['assuntoSelect']==='Assunto'){
     $subject = 'Assunto Indefinido';
   }elseif (empty($_POST['assuntoSelect'])) {
@@ -21,6 +22,7 @@
   }else {
     $subject = $_POST['assuntoSelect'];
   }
+
   $assunto = $subject;
     
   $mail = new PHPMailer(true); //defaults to using php "mail()"; the true param means it will throw exceptions on errors, which we need to catch
