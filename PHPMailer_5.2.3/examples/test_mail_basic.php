@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title>PHPMailer - Mail() basic test</title>
+  <title>Quizmed - envio de email</title>
 </head>
 
 <body>
