@@ -54,7 +54,8 @@
                   ");
     
     $mail->Send();
-    echo  "<script>alert('Email enviado com Sucesso!');</script>";    
+    echo  "<script>alert('Email enviado com Sucesso!');</script>";  
+    header('location: index.html');
     
   } catch (phpmailerException $e) {
     echo $e->errorMessage(); //Pretty error messages from PHPMailer
