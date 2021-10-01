@@ -1,12 +1,19 @@
 #carouselmedicos {
-  width: 80%;
+  width: 90%;
+}
+#carouselmissao {
+  width: 70%;
 }
 
 #imgCardmedicos {
   max-height: 200px;
   border-radius: 50%;
-  align-items: center;
   margin: 5%;
+}
+
+#imgCardmedMissao {
+  max-height: 150px;
+
 }
 .legendcontent{
     margin: 5%;
@@ -25,4 +32,9 @@
 }
 #textCardMedicos{
   margin-right: 15%;
+  margin-bottom: 5%;
+}
+#textCardMissao{
+  margin-right: 10%;
+  margin-bottom: 5%;
 }
