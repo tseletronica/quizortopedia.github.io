@@ -1,0 +1,28 @@
+#carouselmedicos {
+  width: 80%;
+}
+
+#imgCardmedicos {
+  max-height: 200px;
+  border-radius: 50%;
+  align-items: center;
+  margin: 5%;
+}
+.legendcontent{
+    margin: 5%;
+
+}
+.legends{
+    background-color:#49C4BE;
+    color: #ffffff;
+    border-radius: 50%;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+#carouselQuiz {
+  background-color:#ffffff;
+  box-shadow: 15px 45px 55px rgba(229, 233, 246, 0.4); border-radius: 20px;
+}
+#textCardMedicos{
+  margin-right: 15%;
+}
