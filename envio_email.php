@@ -29,11 +29,9 @@
     $subject = "Novo depoimento do usuário registrado!!";
   }
   
-  if(isset($_POST['mensagem'])){
+  if(!empty($_POST['mensagem'])){
     $mensagem = $_POST['mensagem'];
-  }else{
-    $mensagem = 'usuario nao inseriu dados,essa é uma menssagem de aviso ';
-  };
+  };  
   $assunto = $subject;
   
 
