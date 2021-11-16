@@ -29,9 +29,9 @@
     $subject = "Novo depoimento do usuário registrado!!";
   }
   
-  if(!empty($_POST['mensagem'])){
-    $mensagem = $_POST['mensagem'];
-  }; 
+  if (isset($_POST['mensagem']) && !empty($_POST['mensagem'])) {
+                      $mensagem = $_POST['mensagem'];
+  } 
   $assunto = $subject;
   
 
