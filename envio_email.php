@@ -31,7 +31,7 @@
   
   if(!empty($_POST['mensagem'])){
     $mensagem = $_POST['mensagem'];
-  };  
+  }; 
   $assunto = $subject;
   
 
