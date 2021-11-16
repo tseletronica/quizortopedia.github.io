@@ -31,7 +31,10 @@
   
   if (isset($_POST['mensagem']) && !empty($_POST['mensagem'])) {
                       $mensagem = $_POST['mensagem'];
-  } 
+  } else{
+    echo " mensagem vazia , por favor preencha os dados corretamente";
+  };
+
   $assunto = $subject;
   
 
